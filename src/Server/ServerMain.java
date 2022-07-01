@@ -1,7 +1,9 @@
 package Server;
 
+
 public class ServerMain {
     public static void main(String[] args) {
-        System.out.println("Hi from server.");
+        Server server = Server.getInstance();
+        server.init();
     }
 }
