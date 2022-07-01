@@ -1,8 +1,5 @@
 package Client;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-
 import java.io.IOException;
 import java.net.Socket;
 

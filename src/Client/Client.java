@@ -17,6 +17,7 @@ public class Client {
     private DataOutputStream dos;
     private final String authToken;
     private String name;
+    private boolean host = false;
 
     public Client(Socket socket) {
         String tmpAuthToken = "";
@@ -35,9 +36,42 @@ public class Client {
     }
 
     protected void init() {
+        Scanner scanner = new Scanner(System.in);
+        String input = null;
         //TODO
         selectName();
         selectTable();
+
+        if (host) {
+            System.out.println("You're the host.");
+            System.out.println("Type 'start' to start the game!");
+            input = scanner.nextLine();
+            while (!input.equals("start")) {
+                System.out.println("Type 'start' to start the game!");
+                scanner.nextLine();
+            }
+        }
+
+        try {
+            while (true) {
+                input = scanner.nextLine();
+
+                if (input.equals("Ninja Card")) {
+                    //TODO a new instance of ninja card proposal
+                }
+                else {
+                    try {
+                        int card = Integer.parseInt(input);
+                        //TODO a new instance of drop card
+
+                    } catch (NumberFormatException exception) {
+                        System.out.println("Your input was invalid!");
+                    }
+                }
+            }
+        } catch(Exception e) {
+            System.out.println("Finished?");
+        }
     }
 
     private void selectName() {
@@ -76,13 +110,14 @@ public class Client {
              */
 
             // Todo join/new Table and what comes after
+            // TODO is host or not?
         }
     }
 
     private <T> void sendRequest(T object) {
         Gson gson = new Gson();
         JsonArray array = new JsonArray();
-        array.add(gson.toJson(object.getClass().toString()));
+        array.add(object.getClass().toString());
         array.add(gson.toJson(object));
 
         try {
@@ -91,5 +126,9 @@ public class Client {
         } catch (IOException e) {
             System.out.println("------ error: Couldn't writeUTF/flush dos!");
         }
+    }
+
+    public DataInputStream getDis() {
+        return this.dis;
     }
 }
