@@ -1,4 +1,4 @@
-package Client;
+package client;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class ClientMain {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("localhost", 8008);
+        Socket socket = new Socket("localhost", 8000);
         Client client = new Client(socket);
     }
 }

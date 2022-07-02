@@ -1,4 +1,4 @@
-package Server;
+package server.network;
 
 
 public class ServerMain {
