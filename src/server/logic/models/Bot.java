@@ -1,4 +1,4 @@
-package Server.logic.models;
+package server.logic.models;
 
 public class Bot implements Runnable {
     @Override

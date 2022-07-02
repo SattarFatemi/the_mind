@@ -1,7 +1,7 @@
-package Server.logic.manager;
+package server.logic.manager;
 
-import Server.logic.models.Bot;
-import Server.network.ClientHandler;
+import server.logic.models.Bot;
+import server.network.ClientHandler;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package Server.network;
+package server.network;
 
 import com.google.gson.*;
 
@@ -52,7 +52,7 @@ public class ClientHandler implements Runnable {
     private <T> void sendResponse(T response) {
         Gson gson = new Gson();
         JsonArray array = new JsonArray();
-        array.add(gson.toJson(response.getClass().toString()));
+        array.add(response.getClass().toString());
         array.add(gson.toJson(response));
 
         try {

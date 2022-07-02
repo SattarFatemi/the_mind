@@ -1,4 +1,4 @@
-package Client;
+package client;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;

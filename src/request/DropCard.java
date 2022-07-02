@@ -1,9 +1,9 @@
-package Request;
+package request;
 
-public class NewTable {
+public class DropCard {
     public final String authToken;
 
-    public NewTable(String authToken) {
+    public DropCard(String authToken) {
         this.authToken = authToken;
     }
 }
