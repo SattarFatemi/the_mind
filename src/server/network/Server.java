@@ -16,7 +16,7 @@ public class Server {
 
     private Server() {
         try {
-            this.serverSocket = new ServerSocket(8008);
+            this.serverSocket = new ServerSocket(8000);
         } catch (IOException e) {
             System.out.println("Server cant find the port.");
             e.printStackTrace();

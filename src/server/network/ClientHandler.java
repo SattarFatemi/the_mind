@@ -30,8 +30,13 @@ public class ClientHandler implements Runnable {
                      * we can distinguish type of the request using following code:
                      */
 
-                    //String input = dis.readUTF();
-                    String input = "[{'name':'sattar'}, {'age':'19'}]";
+                    String input = null;
+                    try {
+                        input = dis.readUTF();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    input = "[{'name':'sattar'}, {'age':'19'}]";
                     System.out.println("input: " + input);
 
                     Gson g = new Gson();
