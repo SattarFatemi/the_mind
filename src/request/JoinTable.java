@@ -1,4 +1,4 @@
-package Request;
+package request;
 
 public class JoinTable {
     public final String authToken;

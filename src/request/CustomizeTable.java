@@ -1,4 +1,4 @@
-package Request;
+package request;
 
 public class CustomizeTable {
     public final String authToken;

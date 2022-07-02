@@ -1,4 +1,4 @@
-package Request;
+package request;
 
 public class NinjaCardProposal {
     public final String authToken;

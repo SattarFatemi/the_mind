@@ -1,9 +1,9 @@
-package Client;
+package client;
 
-import Response.BurntCards;
-import Response.Deck;
-import Response.GameState;
-import Response.Lobby;
+import response.BurntCards;
+import response.Deck;
+import response.GameState;
+import response.Lobby;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 

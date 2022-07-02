@@ -1,7 +1,7 @@
-package Client;
+package client;
 
-import Request.SelectName;
-import Request.ShowLobby;
+import request.SelectName;
+import request.ShowLobby;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 

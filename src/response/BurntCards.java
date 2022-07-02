@@ -1,4 +1,5 @@
-package Response;
+package response;
 
 public class BurntCards {
+
 }

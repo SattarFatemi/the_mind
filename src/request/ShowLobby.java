@@ -1,4 +1,4 @@
-package Request;
+package request;
 
 public class ShowLobby {
     public final String authToken;

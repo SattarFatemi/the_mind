@@ -1,4 +1,4 @@
-package Request;
+package request;
 
 public class VoteNinjaCard {
     public final String authToken;
